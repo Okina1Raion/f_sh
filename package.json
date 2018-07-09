@@ -1,0 +1,28 @@
+{
+  "name": "contoso-express",
+  "version": "0.1.0",
+  "description": "Full-stack JavaScript application based on Contoso University .NET tutorial",
+  "keywords": [
+    "TypeScript",
+    "Contoso",
+    "Express",
+    "Postgres",
+    "Passport",
+    "React"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd server && npm install && typings install && cd ../client && npm install",
+    "start": "cd server && npm run start",
+    "watch": "cd client && npm run start",
+    "build": "cd server && npm run build && cd ../client && npm run copy-assets && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yegor-sytnyk/contoso-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {}
+}
